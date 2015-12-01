@@ -1,5 +1,5 @@
-<h1>Nästa lucka öppnas om </h1>
-<div hidden aria-hidden="false">$!days dagar, $!hours timmar, $!minutes minuter ungefär.</div>
+<h1>N&auml;sta lucka &ouml;ppnas om </h1>
+<div hidden aria-hidden="false">$!days dagar, $!hours timmar, $!minutes minuter ungef&auml;r.</div>
 <div role="presentation" aria-hidden="true">
   <div id="klockdiv" data-deadline="$deadline">
     <div>
