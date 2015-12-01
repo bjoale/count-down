@@ -1,0 +1,22 @@
+<h1>Nästa lucka öppnas om </h1>
+<div hidden aria-hidden="false">$!days dagar, $!hours timmar, $!minutes minuter ungefär.</div>
+<div role="presentation" aria-hidden="true">
+  <div id="klockdiv" data-deadline="$deadline">
+    <div>
+      <span class="dagar">$!days</span>
+      <div class="litentext">Dagar</div>
+    </div>
+    <div>
+      <span class="timmar">$!hours</span>
+      <div class="litentext">Timmar</div>
+    </div>
+    <div>
+      <span class="minuter">$!minutes</span>
+      <div class="litentext">Minuter</div>
+    </div>
+    <div>
+      <span class="sekunder">$!seconds</span>
+      <div class="litentext">Sekunder</div>
+    </div>
+  </div>
+</div>
