@@ -1,12 +1,12 @@
-var deadline = 'December 3 2015 04:00:00 UTC+0100';
-
+var deadline = 'December 3 2015 00:00:00 UTC+0100';
 
 function getTimeRemaining(endtime){
   var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor( (t/1000) % 60 );
-  var minutes = Math.floor( (t/1000/60) % 60 );
-  var hours = Math.floor( (t/(1000*60*60)) % 24 );
-  var days = Math.floor( t/(1000*60*60*24) );
+  var isFuture = (t>=0);
+  var seconds = (isFuture)?Math.floor( (t/1000) % 60 ):0;
+  var minutes = (isFuture)?Math.floor( (t/1000/60) % 60 ):0;
+  var hours = (isFuture)?Math.floor( (t/(1000*60*60)) % 24 ):0;
+  var days = (isFuture)?Math.floor( t/(1000*60*60*24) ):0;
   return {
     'total': t,
     'days': days,
